@@ -48,7 +48,7 @@ You will now make a helper class that will contain functionality related to the 
 1. Create a "ThemeHelper.swift" file. Add a `ThemeHelper` class inside of it. 2. Create a string constant called `themePreferenceKey`. This will be used whenever you need to save the user's theme preference or get it from `UserDefaults`.
 3. Create a function called `setThemePreferenceToDark()`. Using the `set` method of `UserDefaults` (remember that in order to access `set`, you have to use the `standard` property on `UserDefaults`), set the string "Dark" as the value, and the `themePreferenceKey` as the key.
 4. Create another function that does the same thing, but with a different color. Call the function `setThemePreferenceToYourColorHere`.
-5. Finally, create a computed property called `themePreference` of type `String?`. This should simply return the string value stored from either of the two methods you wrote above using `UserDefaults` `string(forKey: ...)` method. The method should return an optional string because if the user's theme preference hasn't been saved, the value returned from `UserDefaults` will be `nil`.
+5. Finally, create a computed property called `themePreference` of type `String?`. This should simply return the string value that you stored from either of the two methods you wrote above. Use the `UserDefaults` `string(forKey: ...)` method to get that value. The method should return an optional string because if the user's theme preference hasn't been saved, the value returned from `UserDefaults` will be `nil`.
 6. In the initializer for this class (you will have to call it), check if the `themePreference` value is nil. If it is, then call one of the `setThemePreference` functions you just created. This will make it so the first time the user opens the app a preference will be set for them until they choose to change it. 
 
 Keep in mind that the implementation of this class is not the absolute best. You haven't been introduced to a few concepts that would facilitate and keep this class a bit cleaner, especially if this were to be expanded into a full theme helper class for an actual application. Don't worry though, we'll get there!
@@ -115,8 +115,9 @@ Now, we're going to use the `ThemeHelper` class to let us know what theme the us
     - Get the current `themePreference` from the `themeHelper`. Make sure that it has a value, or return out of the function.
     - Based on the value, change the collection view's background color depending on whether the theme is dark or the other color you selected.
 
-6. Implement the `prepareForSegue`. You should have three segues to handle.       - The segue from the "Add" bar button should pass the `themeController`, `photoController`, and the `photo`.
-    - The segue from the cell should pass the the `themeController` and the `photoController`.
+6. Implement the `prepareForSegue`. You should have three segues to handle.      
+    - The segue from the cell should pass the `themeController`, `photoController`, and the `photo`.
+    - The segue from the "Add" bar button item should pass the the `themeController` and the `photoController`.
     - The segue from the "Select Theme" bar button item should pass the `themeController`.
 
 #### ThemeSelectionViewController
