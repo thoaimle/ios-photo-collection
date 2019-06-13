@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4B1085AD22B2E36000F4CADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1085AC22B2E36000F4CADD /* AppDelegate.swift */; };
-		4B1085AF22B2E36000F4CADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1085AE22B2E36000F4CADD /* ViewController.swift */; };
 		4B1085B222B2E36000F4CADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1085B022B2E36000F4CADD /* Main.storyboard */; };
 		4B1085B422B2E36500F4CADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1085B322B2E36500F4CADD /* Assets.xcassets */; };
 		4B1085B722B2E36500F4CADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1085B522B2E36500F4CADD /* LaunchScreen.storyboard */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		4B1085A922B2E35F00F4CADD /* PhotoCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1085AC22B2E36000F4CADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B1085AE22B2E36000F4CADD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B1085B122B2E36000F4CADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B1085B322B2E36500F4CADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B1085B622B2E36500F4CADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 			children = (
 				4B1085AC22B2E36000F4CADD /* AppDelegate.swift */,
 				E81C7EE622B300450006E5C3 /* ThemeHelper.swift */,
-				4B1085AE22B2E36000F4CADD /* ViewController.swift */,
 				4B1085B022B2E36000F4CADD /* Main.storyboard */,
 				4B1085BE22B2E6CC00F4CADD /* Photo.swift */,
 				4B1085C022B2E9F700F4CADD /* PhotoController.swift */,
@@ -145,7 +142,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B1085BF22B2E6CD00F4CADD /* Photo.swift in Sources */,
-				4B1085AF22B2E36000F4CADD /* ViewController.swift in Sources */,
 				4B1085C122B2E9F700F4CADD /* PhotoController.swift in Sources */,
 				E81C7EE722B300450006E5C3 /* ThemeHelper.swift in Sources */,
 				4B1085AD22B2E36000F4CADD /* AppDelegate.swift in Sources */,
