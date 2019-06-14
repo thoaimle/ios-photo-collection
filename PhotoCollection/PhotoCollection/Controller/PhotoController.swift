@@ -17,7 +17,7 @@ func createPhoto (imageData: Data, title: String) {
     }
 
     func updatePhoto (photo: Photo, imageData: Data, title: String) {
-        guard let index = photos.index(of :photo) else { return }
+        guard let index = photos.firstIndex(of: photo) else { return }
         photos[index].imageData = imageData
         photos[index].title = title
         
